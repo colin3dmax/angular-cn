@@ -79,7 +79,7 @@ Later, the [Forms](start/forms "Getting Started: Forms") part of this tutorial g
    1. StackBlitz might generate the  `@Injectable()` decorator without the `{ providedIn: 'root' }` statement as above. Instead, the generator provides the cart service in `app.module.ts` by default. For the purposes
     of this tutorial, either way works. The `@Injectable()` `{ providedIn: 'root' }` syntax allows [tree shaking](/guide/dependency-injection-providers#tree-shakable-providers), which is beyond the scope of this guide.
 
-      StackBlitz 可能会生成不带  `{provedIn：'root'}` 语句的 `@Injectable()` 装饰器。相反，此生成器默认会在 `app.module.ts` 中提供购物车服务。对于本教程来说，任何一种都可以。 不过 `@Injectable()` 的 `{provedIn：'root'}` 语法支持[摇树优化](/guide/dependency-injection-providers#tree-shakable-providers)，但本章不展开讲。
+      StackBlitz 可能会生成不带  `{providedIn：'root'}` 语句的 `@Injectable()` 装饰器。相反，此生成器默认会在 `app.module.ts` 中提供购物车服务。对于本教程来说，任何一种都可以。 不过 `@Injectable()` 的 `{providedIn：'root'}` 语法支持[摇树优化](/guide/dependency-injection-providers#tree-shakable-providers)，但本章不展开讲。
     
 1. In the `CartService` class, define an `items` property to store the array of the current products in the cart.
 
